@@ -1,6 +1,5 @@
-# Transformer Discess Diagnosis
 
-**Transformer Discess Diagnosis** is a sophisticated AI-powered web application designed to assist users in identifying potential symptoms based on a provided description of their illness. Built with **Django** and leveraging advanced transformer models, the app generates diverse and dynamic responses to user inputs, offering a unique experience with each query. 
+**MedDiagnosisAIs** is a sophisticated AI-powered web application designed to assist users in identifying potential symptoms based on a provided description of their illness. Built with **Django** and leveraging advanced transformer models, the app generates diverse and dynamic responses to user inputs, offering a unique experience with each query. 
 
 By utilizing transformer models pre-trained on **Hugging Face** and implemented via **PyTorch**, this application provides an intelligent interface for symptom diagnosis that evolves with each use. 
 
