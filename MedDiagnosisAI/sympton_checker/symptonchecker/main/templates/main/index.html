@@ -1,0 +1,51 @@
+{% load static %}
+<DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" lang="en-us">
+        <link href="{% static 'main/style.css' %}" rel="stylesheet">
+        <script src="{% static 'main/action.js' %}"></script>
+        <title>Sympton Checker</title>
+    </head>
+
+    <body id="body">
+        <p class="big-text">
+            Sympton Checker
+        </p>
+
+        <div class="main-container">
+            <form method='post' id="form"> 
+                {% csrf_token %}
+                
+                <input class="input" type="text" name="sickness" placeholder="Enter the name of illness"> <!-- need to change to post -->
+
+                <button class="mid-text btn" type="submit" onclick="process()">
+                   Submit 
+                </button>
+            </form>
+
+            <div class="blank-space"></div>
+
+            <div display="flex; flex-direction: row;"> 
+                <a class="btn small-text" href="{% url 'main:index' %}"> Kill/Restart</a>
+                <a class="btn small-text" href="{% url 'main:welcome' %}"> Go back to home</a>
+            </div>
+            
+
+            {% if result %}
+            <p class="output mid-text" style="color:gray">
+                {{result}}
+            </p>
+
+            {% else %}
+            <p class="output mid-text" style="color:gray">
+                Response: 
+            </p>
+            
+            {% endif %}
+            
+        </div>
+
+    </body>
+</html>
+</DOCTYPE>

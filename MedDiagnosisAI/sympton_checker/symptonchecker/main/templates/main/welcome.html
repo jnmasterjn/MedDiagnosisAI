@@ -1,0 +1,26 @@
+{% load static %}
+<DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" lang="en-us">
+        <link href="{% static 'main/style.css' %}" rel="stylesheet">
+        <title>Welcome</title>
+    </head>
+
+    <body>
+        <p class="big-text">
+            <br>
+            Welcome to our AI-powered Symptom Checker! <br>
+            Unlock the mysteries of your symptoms effortlessly.<br>
+            Using cutting-edge AI transformer technology, simply input the name of an illness, and delve into its associated symptoms.<br> 
+            Our tool harnesses the power of advanced language processing to provide you with reliable insights. <br>
+            Remember, while our Symptom Checker is a valuable aid, always seek personalized advice from a healthcare professional.<br>
+        </p>
+
+        <div class="blank-space"></div>
+        <div class="blank-space"></div>
+ 
+        <a class="btn big-text" href="{% url 'main:index' %}"> Get Started</a>
+    </body>
+</html>
+</DOCTYPE>
